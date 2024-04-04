@@ -13,7 +13,6 @@ ARGV.each do |arg|
     i_arg = arg.to_i
     
     # insert result at the right position
-    is_inserted = false
     i = 0
     l = result.size
     while !is_inserted && i < l do
@@ -21,7 +20,6 @@ ARGV.each do |arg|
             i += 1
         else
             result.insert(i - 1, i_arg)
-            is_inserted = true
             break
         end
     end
